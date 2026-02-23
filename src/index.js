@@ -16,7 +16,7 @@ function renderPersonalInfo() {
   const container = document.getElementById('personal-info');
   const brand = document.getElementById('nav-brand');
   
-  brand.textContent = personal.name;
+  brand.textContent = personal.headerName;
   
   container.innerHTML = `
     <h1 class="name">${escapeHtml(personal.name)}</h1>
@@ -44,9 +44,9 @@ function renderSocialLinks() {
   
   let linksHtml = '';
   
-  if (personal.social.twitter) {
+  if (personal.social.x) {
     linksHtml += `
-      <a href="${escapeHtml(personal.social.twitter)}" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+      <a href="${escapeHtml(personal.social.x)}" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
         <i class="fab fa-twitter"></i>
       </a>
     `;
