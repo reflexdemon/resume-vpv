@@ -1,0 +1,237 @@
+{
+  "personal": {
+    "name": "Venkateswara Venkatraman Prasanna",
+    "title": "Seasoned Technology Leader",
+    "phone": "(678) 720-8777",
+    "email": "contact@vpv.io",
+    "summary": "Seasoned Technology leader with over 18 yrs of experience building enterprise solutions that are multi-tiered & multi-tenant that transitions seamlessly between mobile and desktop. I have built scalable, high fidelity systems in various domains including Retail, Payments, Communication, Travel & Ads. My passion lies in solving technical challenges to maximize product adoption and innovation to scale faster with the right architecture. Being a technology leader, I enjoy guiding technical teams with the right frameworks and best practices. I am technology agnostic but have a strong background as a full-stack developer in Java for many years and well-versed in industry leading design patterns.",
+    "social": {
+      "twitter": "https://twitter.com/reflexdemon",
+      "linkedin": "https://www.linkedin.com/in/venkatvp/",
+      "github": "https://github.com/reflexdemon/"
+    }
+  },
+  "experience": [
+    {
+      "id": "adp",
+      "company": "ADP",
+      "title": "Principal Application Developer",
+      "period": "March 2023 - Present",
+      "location": "",
+      "role": "Work with the Payroll Innovation team to build the Next generation of the Payroll system. Work with the Payroll team to understand the requirements and design the system. Work with development teams to implement the new system ensure the quality is not compromised. Also ensure the product is launched on the committed timeline to the end users.",
+      "accomplishments": [
+        "Leads a team delivering full-stack applications from prototypes and wireframes to production code",
+        "Drives prototyping, evaluates and recommends new technologies to improve client experience",
+        "Coordinates workflow among end users, product owners, and developers to solve critical problems",
+        "Builds RESTful APIs, writes unit tests, and participates in code reviews to ensure quality",
+        "Partners with release coordination to deploy across environments; assists support with triage and production issues",
+        "Creates and updates software documentation",
+        "Leads Agile practices: daily stand-ups, planning poker, tasking",
+        "Designs, develops, debugs, and deploys software solutions",
+        "Utilizes: Java, Spring Boot, JavaScript, Angular, React, web services/REST, Apache Kafka, Scrum/Kanban, MySQL, Elasticsearch/NoSQL, SQS, Jenkins/Docker/Kubernetes"
+      ]
+    },{
+      "id": "amazon",
+      "company": "Amazon",
+      "title": "Sr. Technical Program Manager",
+      "period": "April 2022 - March 2023",
+      "location": "",
+      "role": "Part of Amazon Advertising responsible for launching Sponsored Ads for international markets. Work with engineering teams to build the HLD/TLDs for bespoke requirements. Identify the Amazon Market Configuration changes for each marketplace and work with development teams to implement the new config values. Troubleshoot launch issues by doing deep diving and hosting working sessions. Review code changes from engineering teams. Highlight risks and mitigation plan for leadership and work through escalations to resolve blockers. Provide status updates to key stakeholders on a periodic basis and publish status documents for leadership review.",
+      "accomplishments": [
+        "Successfully launched Sponsored Ads for Egypt within 3 months of joining the sponsored ads team.",
+        "Being a single threaded owner for the Belgium sponsored ads expansion, single handedly worked with partners and resolved all the launch blockers to complete the launch",
+        "Identify market configuration and publish them through the Advertising Market Configurator App Config and promote the changes to various environments.",
+        "Built Grease Monkey script to automate the validation of placement cards for launch readiness"
+      ]
+    },
+    {
+      "id": "bakkt",
+      "company": "Bakkt",
+      "title": "Platform Architect",
+      "period": "September 2015 - April 2022",
+      "location": "",
+      "role": "Worked on Bakkt (formally Bridge2 Solutions) Loyalty Platform from ideation to design and develop net-new features. Hands-on engineering of high-value, net-new platform capabilities. Accountable for technical optimization of the product architecture and execution in collaboration with engineering leadership. Designing (includes documentation), developing, testing, and implementing Java applications on a predefined schedule using technologies, techniques, and tools to ensure high quality, performance, and reliability, at varying levels of complexity. Build initial technical design and framework engineering for net-new components and significant refactoring efforts. Establishment of fundamental and foundational technical patterns and principles for all engineering work. Resolving technical issues through debugging, research, and investigation. Participate as a senior technology leader in key roadmap, assessment and priority discussions",
+      "accomplishments": [
+        "Worked with multiple stakeholders to design and plan the migration of the UI from legacy web interface to modern Single Page Application using Angular 10 with improved performance on page load time (from > 5s to < 3s) that is responsive and also WCAG 2.0 complaint for accessibility",
+        "Redesign multiple backend monolith Spring/Struts applications to modular microservices and parallelly upgrade to use Spring Boot and Java 11 within the planned timelines and within the budget.",
+        "Successfully expanded the Apple Stores in new markets across APAC and South American continents that had unique challenges in payment integration, localization and address validation for last mile delivery.",
+        "Rearchitected the infrastructure to get to 99.95 uptime by implementing Blue Green deployment. Since the platform customers across the globe, it was challenging to get a green window to perform the deployment with internal and external stakeholders.",
+        "Successfully managed to bring all the code repositories to follow CI/CD pipelines using Gerrit, Jenkins pipelines and Chef deployments."
+      ]
+    },
+    {
+      "id": "cognizant",
+      "company": "Cognizant Technology Solutions",
+      "title": "Manager - Projects",
+      "period": "February 2011 - September 2015",
+      "location": "",
+      "role": "Served as an Architect for Birch (formally Cbeyond) through Cognizant. Work with clients on new feature developments and critical enhancements to the product. Work closely with Cognizant leadership on the resource planning and provide forecasting based on the current situation. Participate in client RFPs and showcase the technical roadmap for the client. Prepare estimations, high-level design and low-level design specifications. Build robust JIA between teams and enable rapid development between various vendor teams. Prepare detailed estimates and get approval from clients. Undertake full technical responsibility for delivery of the portal, ensuring end-to-end ownership of all technical aspects, including monitoring output of others, implementing best development practices, input to project plans, understanding business domain and identifying areas for continuous improvement. Ensure delivered software follows organization's coding standards and best practice guidelines.",
+      "accomplishments": [
+        "Upgrade legacy web portal to Single Page Application using HTML5/Jquery/Backbone JS. This required redesigning of all the backend calls to be migrated to restful web services and build new pipelines for UI.",
+        "Successful migration of the Backbone JS based UI application to Angular JS 1.x within the budget and on time to meet tight client deadlines.",
+        "Eliminated the need for sticky sessions on the load balancer by migrating the cookie based authentication to token based authentication. Thus it allowed deployment of services during the day time to minimize the outage window.",
+        "Represent the project on all forums and be an active contributor to DAG/Codenizant implementation within the project. Also work with external auditors for ISO/9001 and TL9K audits.",
+        "Successfully migrate application from Weblogic to Tomcat with almost zero defects in QA."
+      ]
+    },
+    {
+      "id": "wipro",
+      "company": "Wipro Technologies",
+      "title": "Senior Software Engineer",
+      "period": "September 2009 - January 2011",
+      "location": "",
+      "role": "As a Senior Engineer on the team, worked on building Proof of Concepts for net new features. Support the application through emails and through tickets. Contribute to the product documentation and conduct demos to new users. Developing streams for the users and also guiding them on stream creation.",
+      "accomplishments": [
+        "Was instrumental in adding generic SOAP based webservice client to the product which required through understanding of the SOAP protocol and reengineering of core API.",
+        "Upgrade the UI to fix any functional and technical issues that encouraged the adaptation of the product and increased the customer base.",
+        "Successfully upgraded the Java version from 1.4 to 1.6, webserver from Jrun 4 to Weblogic 10.3 and migrated database from Sybase to Oracle"
+      ]
+    },
+    {
+      "id": "tcs",
+      "company": "TATA Consultancy Services",
+      "title": "Module Leader",
+      "period": "November 2008 - September 2009",
+      "location": "Chennai, India",
+      "role": "I was responsible for the initial launch and technical delivery. This was a project that I was involved in the development of the project from initial stages to the launch. I ensured there is utmost care taken in the delivery to ensure there is no slippage in the timelines. One of the prominent contribution by me to the project was the adhoc reporting module that was suctioned and delivered by me end to end. This adhoc reporting tool is one of the most used feature in the tool. I was involved in the triaging the defects and distribute it with the team and deliver it to the client. During the development of the project I was also responsible for training the Junior team members in the software development and build a healthy development environment.",
+      "accomplishments": []
+    },
+    {
+      "id": "hcl",
+      "company": "HCL Technologies",
+      "title": "Software Engineer",
+      "period": "June 2004 - October 2008",
+      "location": "Bengaluru, India",
+      "role": "I was responsible for writing Java Script Validations and designing screens using XML/XSLT. I also contributed to the backend in writing Action classes, Data Access Objects (DAO) and Value Objects (VO). This project also exposed me to the EJBs like Message Driven Beans (MDB), Entity Beans and Session Beans.",
+      "accomplishments": []
+    }
+  ],
+  "education": [
+    {
+      "id": "mca",
+      "institution": "Kongu Arts and Science College, Erode, India",
+      "university": "Bharathiar University, Coimbatore, India",
+      "degree": "Master of Computer Applications",
+      "period": "June 2001 - May 2004",
+      "score": "77%"
+    },
+    {
+      "id": "bsc",
+      "institution": "AVS College of Science, Salem, India",
+      "university": "Periyar University, Salem, India",
+      "degree": "Bachelor of Science - Computer Science",
+      "period": "June 1998 - May 2001",
+      "score": "70%"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend Tools & Frameworks",
+      "items": ["HTML5", "CSS3", "JavaScript", "Angular 10", "Angular JS", "jQuery", "Backbone JS", "React", "Vue"]
+    },
+    {
+      "category": "Backend Languages, Tools & Frameworks",
+      "items": ["Core Java", "Spring Framework", "JPA & Hibernate", "EJB", "Node JS", "Android App Development"]
+    },
+    {
+      "category": "Cloud",
+      "items": ["Pivotal Cloud Foundry", "OpenShift", "Heroku", "AWS"]
+    },
+    {
+      "category": "Databases",
+      "items": ["MongoDB", "Oracle", "MS SQL Server", "MySQL"]
+    },
+    {
+      "category": "IDE & Editors",
+      "items": ["Eclipse", "IntelliJ", "Sublime Text", "VS Code", "Android Studio"]
+    },
+    {
+      "category": "CI/CD & DevOps Tools",
+      "items": ["Jenkins", "Travis CI", "Bash Shell Scripting", "GIT", "Gerrit", "SVN", "Chef"]
+    },
+    {
+      "category": "Workflow",
+      "items": ["Agile Development", "Scrum", "Mobile-First Responsive Design", "WCAG 2.0", "Cross Browser Testing"]
+    }
+  ],
+  "interests": "Apart from being a web developer, I enjoy watching movies mainly Indian Movies. When there is no movies available then I read news about Politics.",
+  "projects": [
+    {
+      "id": "ssl-tls-tool",
+      "name": "SSL/TLS Certificate Tool",
+      "url": "https://cert.vpv.io/",
+      "description": "A simple utility written using Java 11/Spring Boot 2.x for backend and Vue for the UI. The UI also makes use of Bootstrap/Fontawesome for styling and look and feel.",
+      "technologies": ["Java 11", "Spring Boot 2.x", "Vue", "Bootstrap", "Font Awesome"]
+    },
+    {
+      "id": "math-problem-generator",
+      "name": "Math Problem Generator",
+      "url": "https://github.com/reflexdemon/problem-generateor",
+      "description": "A simple tool to generate random Math Problems for the 2nd grade students. This also helped me to show that we can always write code to get 90%+ in code coverage. I got 100% code coverage.",
+      "technologies": ["Java", "JUnit"]
+    },
+    {
+      "id": "spring-boot-version-viewer",
+      "name": "Spring Boot Version Viewer",
+      "url": "https://github.com/reflexdemon/spring-boot-version",
+      "description": "A tool that will show the Software dependencies for the Spring Boot Version selected.",
+      "technologies": ["Java", "Spring Boot"]
+    },
+    {
+      "id": "java-ssl-test",
+      "name": "Java SSL Test",
+      "url": "https://github.com/reflexdemon/java-ssl-test",
+      "description": "Simple Java based CLI Tool to test SSL/TLS connection and list the ciphers",
+      "technologies": ["Java", "SSL/TLS"]
+    },
+    {
+      "id": "simple-uml",
+      "name": "Simple UML",
+      "url": "https://uml.vpv.io",
+      "description": "A simple GUI to demonstrate the use of Spring Boot 2.X and Angular 5 using Plant UML plugin",
+      "technologies": ["Spring Boot 2.x", "Angular 5", "Plant UML"]
+    },
+    {
+      "id": "shop",
+      "name": "Shop",
+      "url": "https://github.com/reflexdemon/shop",
+      "description": "A basic E-Commerce portal using Spring Boot and Angular 2+",
+      "technologies": ["Spring Boot", "Angular 2+"]
+    },
+    {
+      "id": "slush-angular-gulp",
+      "name": "slush-angular-gulp",
+      "url": "https://www.npmjs.com/package/slush-angular-gulp",
+      "description": "A slush generator for AngularJS using the Google Angular App Structure Recommendations",
+      "technologies": ["AngularJS", "Gulp", "Slush"]
+    },
+    {
+      "id": "demo",
+      "name": "Demo",
+      "url": "https://github.com/reflexdemon/demo",
+      "description": "An open source project that was mainly created for the purpose of learning to host code on the OpenShift cloud.",
+      "technologies": ["Java", "OpenShift"]
+    },
+    {
+      "id": "diff-report",
+      "name": "Diff Report",
+      "url": "https://github.com/reflexdemon/diffreport",
+      "description": "A Java based tool to compare folders of the application and run tools like PMD, firebug and provide the delta.",
+      "technologies": ["Java", "PMD"]
+    },
+    {
+      "id": "sql-runner",
+      "name": "SQL Runner",
+      "url": "https://github.com/reflexdemon/SQLRunner",
+      "description": "A CLI utility to run SQL commands",
+      "technologies": ["Java", "SQL"]
+    },
+    {
+      "id": "remote-ssh",
+      "name": "Remote SSH",
+      "url": "https://github.com/reflexdemon/remote-ssh",
+      "description": "A simple CLI tool to monitor logs from multiple hosts in a single window. This is very useful in monitoring app logs running on a cluster.",
+      "technologies": ["Node.js", "SSH"]
+    }
+  ]
+}
