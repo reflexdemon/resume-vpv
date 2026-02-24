@@ -4,8 +4,9 @@
 
 - **Project name**: resume-vpv
 - **Type**: Node.js/CommonJS project
-- **Description**: Resume of Venkateswara VP
+- **Description**: Online resume of Venkateswara VP - a seasoned technology leader with 18+ years of experience
 - **Author**: reflexdemon
+- **Tech Stack**: Webpack, JavaScript, HTML, CSS, JSON-driven content
 
 ---
 
@@ -14,18 +15,22 @@
 ### Available Commands
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server (hot reload)
+npm run dev
+
+# Build for production
+npm run build
+
 # Test (placeholder - no actual tests configured)
 npm test
 ```
 
-### Adding Tests
-
-This project currently has no test framework configured. When adding tests:
+### Running a Single Test
 
 ```bash
-# Install a test framework (Jest recommended for this project type)
-npm install --save-dev jest
-
 # Run a single test file
 npx jest path/to/test.test.js
 
@@ -39,9 +44,6 @@ npx jest --watch
 ### Linting
 
 ```bash
-# Install ESLint
-npm install --save-dev eslint
-
 # Run ESLint
 npx eslint .
 
@@ -60,9 +62,18 @@ npx eslint . --fix
 - Use meaningful variable and function names
 - Avoid magic numbers - use constants
 
+### Accessibility (WCAG 2.1)
+
+- Ensure proper semantic HTML (header, main, footer, nav, article, section)
+- Add ARIA labels for interactive elements
+- Maintain color contrast ratio of 4.5:1 for normal text
+- Ensure keyboard navigation works for all interactive elements
+- Add alt text for images
+- Focus indicators must be visible
+
 ### Formatting
 
-- Use 2 spaces for indentation (or follow existing file convention)
+- Use 2 spaces for indentation
 - Use single quotes for strings in JavaScript
 - Always use semicolons
 - Maximum line length: 100 characters
@@ -121,10 +132,10 @@ try {
 ```
 src/
   index.js          # Entry point
-  resume/           # Resume-related modules
-  utils/            # Utility functions
-  config/           # Configuration files
-tests/              # Test files (mirror src structure)
+  index.html        # HTML template
+  styles.css        # Styles
+  config/           # Configuration files (resume.json)
+assets/             # Static assets (images, fonts)
 ```
 
 ### Git Conventions
@@ -144,6 +155,5 @@ tests/              # Test files (mirror src structure)
 
 ## Project Status
 
-This project is currently minimal with only a basic `package.json`. 
-Establish conventions as you add code. Update this file when adding 
-new tools or changing project structure.
+This project is a webpack-based resume website with JSON-driven content.
+The resume data is stored in `src/config/resume.json`.

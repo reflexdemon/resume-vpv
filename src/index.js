@@ -1,5 +1,6 @@
 const resumeData = require('./config/resume.json');
 require('./styles.css');
+const html2pdf = require('html2pdf.js');
 
 function escapeHtml(text) {
   if (!text) return '';
@@ -303,6 +304,64 @@ function setYear() {
   document.getElementById('year').textContent = new Date().getFullYear();
 }
 
+function initTheme() {
+  const toggle = document.getElementById('theme-toggle');
+  const icon = toggle.querySelector('i');
+  
+  function updateIcon() {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    icon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+    toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+  
+  updateIcon();
+  
+  toggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateIcon();
+  });
+  
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      updateIcon();
+    }
+  });
+}
+
+function initPdfDownload() {
+  const pdfBtn = document.getElementById('pdf-download');
+  
+  pdfBtn.addEventListener('click', () => {
+    document.body.classList.add('pdf-mode');
+    
+    const element = document.querySelector('main');
+    const opt = {
+      margin: [10, 10, 10, 10],
+      filename: 'resume-venkateswara-vp.pdf',
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { 
+        scale: 2, 
+        useCORS: true,
+        logging: false
+      },
+      jsPDF: { 
+        unit: 'mm', 
+        format: 'a4', 
+        orientation: 'portrait' 
+      },
+      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+    };
+    
+    html2pdf().set(opt).from(element).save().then(() => {
+      document.body.classList.remove('pdf-mode');
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   try {
     renderPersonalInfo();
@@ -315,6 +374,8 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProjects();
     renderContact();
     initNavigation();
+    initTheme();
+    initPdfDownload();
     handleDeepLink();
     setYear();
   } catch (error) {
