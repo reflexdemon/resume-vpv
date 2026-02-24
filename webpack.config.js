@@ -20,7 +20,12 @@ module.exports = (env, argv) => {
         directory: path.join(__dirname, 'dist'),
       },
       port: 3000,
-      open: true,
+      open: {
+        app: {
+          name: "chromium",
+          arguments: ["--incognito", "--new-window"],
+        },
+      },
       hot: true,
     },
     module: {
