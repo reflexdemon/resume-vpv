@@ -286,6 +286,81 @@ function initNavigation() {
       navbar.classList.remove('scrolled');
     }
   });
+
+  initAsideNavigation();
+  initBackToTop();
+}
+
+function initAsideNavigation() {
+  const asideNav = document.getElementById('aside-nav');
+  
+  function updateAsideNavVisibility() {
+    if (window.innerWidth >= 1024) {
+      asideNav.classList.add('visible');
+    } else {
+      asideNav.classList.remove('visible');
+    }
+  }
+  
+  updateAsideNavVisibility();
+  window.addEventListener('resize', updateAsideNavVisibility);
+}
+
+function initScrollSpy() {
+  const sections = document.querySelectorAll('.section');
+  const asideLinks = document.querySelectorAll('.aside-nav-link');
+  
+  if (!('IntersectionObserver' in window)) {
+    return;
+  }
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        asideLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + id) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }, {
+    rootMargin: '-20% 0px -60% 0px'
+  });
+  
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+}
+
+function initBackToTop() {
+  const backToTopBtn = document.getElementById('back-to-top');
+  const firstSection = document.querySelector('.section');
+  
+  if (!firstSection) {
+    return;
+  }
+  
+  const firstSectionTop = firstSection.offsetTop;
+  
+  function updateBackToTopVisibility() {
+    if (window.scrollY > firstSectionTop) {
+      backToTopBtn.classList.add('visible');
+    } else {
+      backToTopBtn.classList.remove('visible');
+    }
+  }
+  
+  window.addEventListener('scroll', updateBackToTopVisibility);
+  
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 }
 
 function handleDeepLink() {
@@ -374,6 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProjects();
     renderContact();
     initNavigation();
+    initScrollSpy();
     initTheme();
     initPdfDownload();
     handleDeepLink();
