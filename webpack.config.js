@@ -9,7 +9,7 @@ module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
 
   return {
-    entry: './src/index.js',
+    entry: isProduction ? './src/runtime.js' : './src/index.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'main.js',
@@ -41,16 +41,14 @@ module.exports = (env, argv) => {
     },
     plugins: [
       new CleanWebpackPlugin(),
-      new HtmlWebpackPlugin({
-        template: './src/index.html',
-        minify: isProduction
-          ? {
-              removeComments: true,
-              collapseWhitespace: true,
-              removeAttributeQuotes: true,
-            }
-          : false,
-      }),
+      ...(isProduction
+        ? []
+        : [
+            new HtmlWebpackPlugin({
+              template: './src/index.html',
+              minify: false,
+            }),
+          ]),
       ...(isProduction
         ? [
             new MiniCssExtractPlugin({
