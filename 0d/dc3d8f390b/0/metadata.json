@@ -1,0 +1,21 @@
+{
+  "cli_version": "0.4.7",
+  "checkpoint_id": "0ddc3d8f390b",
+  "session_id": "ses_336b02c09ffexDKMUJJz8hJGZX",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-08T23:46:16.233439Z",
+  "branch": "main",
+  "checkpoints_count": 3,
+  "files_touched": [
+    "src/runtime.js"
+  ],
+  "agent": "OpenCode",
+  "turn_id": "5c463dfe4a3c",
+  "token_usage": {
+    "input_tokens": 57731,
+    "cache_creation_tokens": 389082,
+    "cache_read_tokens": 10052912,
+    "output_tokens": 29870,
+    "api_call_count": 165
+  }
+}
