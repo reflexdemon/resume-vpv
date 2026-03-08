@@ -143,6 +143,12 @@ function initTheme() {
     document.documentElement.setAttribute('data-theme', next);
     localStorage.setItem('theme', next);
     updateIcon();
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'theme_toggle', {
+        event_category: 'engagement',
+        event_label: 'theme_changed_to_' + next
+      });
+    }
   });
   
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
@@ -180,6 +186,12 @@ function initPdfDownload() {
     
     html2pdf().set(opt).from(element).save().then(() => {
       document.body.classList.remove('pdf-mode');
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'pdf_download', {
+          event_category: 'engagement',
+          event_label: 'resume_download'
+        });
+      }
     });
   });
 }
