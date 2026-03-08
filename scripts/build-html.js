@@ -336,6 +336,14 @@ function buildHtml() {
   fs.writeFileSync(OUTPUT_PATH, html);
   console.log(`Output written to ${OUTPUT_PATH}`);
   
+  const cnamePath = path.join(outputDir, 'CNAME');
+  fs.writeFileSync(cnamePath, 'me.vpv.io\n');
+  console.log(`CNAME written to ${cnamePath}`);
+  
+  const nojekyllPath = path.join(outputDir, '.nojekyll');
+  fs.writeFileSync(nojekyllPath, '');
+  console.log(`.nojekyll written to ${nojekyllPath}`);
+  
   return OUTPUT_PATH;
 }
 
