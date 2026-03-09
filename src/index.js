@@ -1,5 +1,7 @@
 const resumeData = require('./config/resume.json');
 require('./styles.css');
+require('./styles/cookie-consent.css');
+require('./components/cookie-consent');
 const html2pdf = require('html2pdf.js');
 
 function escapeHtml(text) {

@@ -1,0 +1,238 @@
+.cc-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  color: #00ff00;
+  font-family: 'Courier New', 'Fira Code', 'Monaco', 'Consolas', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 20px;
+  z-index: 10000;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid #00ff00;
+}
+
+.cc-banner.active {
+  transform: translateY(0);
+}
+
+.cc-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cc-header {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cc-prompt {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.cc-title {
+  color: #00ff00;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cc-description {
+  color: #cccccc;
+  margin-bottom: 20px;
+  padding-left: 24px;
+}
+
+.cc-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-left: 24px;
+}
+
+.cc-btn {
+  background-color: transparent;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  font-family: 'Courier New', 'Fira Code', 'Monaco', 'Consolas', monospace;
+  font-size: 14px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+
+.cc-btn:hover {
+  background-color: #00ff00;
+  color: #1a1a1a;
+}
+
+.cc-btn:focus {
+  outline: 2px solid #00ff00;
+  outline-offset: 2px;
+}
+
+.cc-btn-accept:hover {
+  background-color: #00ff00;
+}
+
+.cc-btn-reject:hover {
+  background-color: #ff6b6b;
+  border-color: #ff6b6b;
+  color: #1a1a1a;
+}
+
+.cc-btn-prefs:hover {
+  background-color: #4ecdc4;
+  border-color: #4ecdc4;
+  color: #1a1a1a;
+}
+
+.cc-preferences {
+  padding-left: 24px;
+}
+
+.cc-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.cc-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.cc-option input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #00ff00;
+  background-color: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.cc-option input[type="checkbox"]:checked {
+  background-color: #00ff00;
+}
+
+.cc-option input[type="checkbox"]:checked::after {
+  content: '✓';
+  display: block;
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.cc-option input[type="checkbox"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.cc-option-label {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.cc-option-desc {
+  color: #999999;
+  font-size: 12px;
+  display: block;
+  margin-top: 2px;
+}
+
+.cc-btn-save:hover {
+  background-color: #00ff00;
+}
+
+.cc-btn-back:hover {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  color: #1a1a1a;
+}
+
+@media (max-width: 600px) {
+  .cc-banner {
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  .cc-buttons {
+    flex-direction: column;
+  }
+
+  .cc-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+[data-theme="light"] .cc-banner {
+  background-color: #f5f5f5;
+  color: #006400;
+  border-top-color: #006400;
+}
+
+[data-theme="light"] .cc-banner .cc-prompt,
+[data-theme="light"] .cc-banner .cc-title,
+[data-theme="light"] .cc-banner .cc-btn {
+  color: #006400;
+}
+
+[data-theme="light"] .cc-banner .cc-btn {
+  border-color: #006400;
+}
+
+[data-theme="light"] .cc-banner .cc-btn:hover {
+  background-color: #006400;
+  color: #f5f5f5;
+}
+
+[data-theme="light"] .cc-banner .cc-description {
+  color: #333333;
+}
+
+[data-theme="light"] .cc-banner .cc-option-desc {
+  color: #666666;
+}
+
+[data-theme="light"] .cc-banner .cc-option input[type="checkbox"] {
+  border-color: #006400;
+}
+
+[data-theme="light"] .cc-banner .cc-option input[type="checkbox"]:checked {
+  background-color: #006400;
+}
+
+[data-theme="light"] .cc-banner .cc-option input[type="checkbox"]:checked::after {
+  color: #f5f5f5;
+}
+
+[data-theme="light"] .cc-btn-reject:hover {
+  background-color: #ff6b6b;
+  color: #f5f5f5;
+}
+
+[data-theme="light"] .cc-btn-prefs:hover {
+  background-color: #4ecdc4;
+  color: #f5f5f5;
+}
+
+[data-theme="light"] .cc-btn-back:hover {
+  background-color: #666666;
+  color: #f5f5f5;
+}
