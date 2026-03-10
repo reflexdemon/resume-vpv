@@ -3,7 +3,7 @@
   "checkpoint_id": "976777b789ec",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 7,
+  "checkpoints_count": 14,
   "files_touched": [
     "openspec/changes/archive/2026-03-10-update-skill-icons/.openspec.yaml",
     "openspec/changes/archive/2026-03-10-update-skill-icons/design.md",
@@ -19,13 +19,19 @@
       "transcript": "/97/6777b789ec/0/full.jsonl",
       "content_hash": "/97/6777b789ec/0/content_hash.txt",
       "prompt": "/97/6777b789ec/0/prompt.txt"
+    },
+    {
+      "metadata": "/97/6777b789ec/1/metadata.json",
+      "transcript": "/97/6777b789ec/1/full.jsonl",
+      "content_hash": "/97/6777b789ec/1/content_hash.txt",
+      "prompt": "/97/6777b789ec/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 15339,
-    "cache_creation_tokens": 116981,
-    "cache_read_tokens": 1005766,
-    "output_tokens": 7516,
-    "api_call_count": 44
+    "input_tokens": 44840,
+    "cache_creation_tokens": 251983,
+    "cache_read_tokens": 2968016,
+    "output_tokens": 19692,
+    "api_call_count": 99
   }
 }
