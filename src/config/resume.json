@@ -127,6 +127,10 @@
   ],
   "skills": [
     {
+      "category": "AI",
+      "items": ["Opencode", "OpenSpec", "Claud Code", "Copilot", "AmazonQ"]
+    },
+    {
       "category": "Frontend Tools & Frameworks",
       "items": ["HTML5", "CSS3", "JavaScript", "Angular 10", "Angular JS", "jQuery", "Backbone JS", "React", "Vue"]
     },
