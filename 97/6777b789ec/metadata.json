@@ -1,0 +1,31 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "976777b789ec",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 7,
+  "files_touched": [
+    "openspec/changes/archive/2026-03-10-update-skill-icons/.openspec.yaml",
+    "openspec/changes/archive/2026-03-10-update-skill-icons/design.md",
+    "openspec/changes/archive/2026-03-10-update-skill-icons/proposal.md",
+    "openspec/changes/archive/2026-03-10-update-skill-icons/specs/ai-tool-icons/spec.md",
+    "openspec/changes/archive/2026-03-10-update-skill-icons/tasks.md",
+    "src/config/resume.json",
+    "src/index.js"
+  ],
+  "sessions": [
+    {
+      "metadata": "/97/6777b789ec/0/metadata.json",
+      "transcript": "/97/6777b789ec/0/full.jsonl",
+      "content_hash": "/97/6777b789ec/0/content_hash.txt",
+      "prompt": "/97/6777b789ec/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 15339,
+    "cache_creation_tokens": 116981,
+    "cache_read_tokens": 1005766,
+    "output_tokens": 7516,
+    "api_call_count": 44
+  }
+}
